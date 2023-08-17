@@ -1,0 +1,74 @@
+/* Import colors.css */
+@import url("../CssFiles/colors.css");
+
+/* Base button styles */
+.btn {
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-weight: 530;
+    padding: 10px 20px; /* Adjust padding to provide horizontal spacing */
+    background-color: var(--primary-bg);
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s, transform 0.3s;
+    width: auto; /* Allow button to adjust its width based on content */
+    display: inline-block; /* Maintain inline behavior */
+}
+
+.btn:hover, .btn:active {
+    box-shadow: 0 0 20px rgba(136, 38, 215, 0.5);
+    transform: scale(1.1);
+    color: var(--primary-bg);
+}
+
+/* Outline button styles */
+.btn-outline {
+    background-color: transparent;
+    color: var(--primary-bg);
+    border: 2px solid var(--primary-bg);
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s, transform 0.3s;
+    width: auto; /* Allow button to adjust its width based on content */
+    display: inline-block;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-weight: 530;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.btn-outline:hover, .btn-outline:active {
+    box-shadow: 0 0 20px rgba(136, 38, 215, 0.3);
+    transform: scale(1.1);
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 480px) {
+    .btn, .btn-outline {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .btn, .btn-outline {
+        font-size: 13px;
+        padding: 9px 18px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .btn, .btn-outline {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
