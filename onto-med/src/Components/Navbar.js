@@ -55,7 +55,7 @@ const Navbar = () => {
                 class="btn  me-2 btn-mg" // Adding btn-lg for larger size and btn-danger for red color
                 type="submit"
               >
-               Become an Expert
+               Register / SignUp
               </button>
               <button
                 class="btn-outline btn-mg " // Adding btn-lg for larger size and border-0 for no border
