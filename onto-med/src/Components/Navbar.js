@@ -2,6 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "./CssFiles/colors.css";
 import"./Buttons/button.css";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const shadowStyle = {
@@ -15,12 +16,12 @@ const Navbar = () => {
         className="navbar navbar-expand-lg bg-body-tertiary px-5"
         style={shadowStyle}
       >
-        <div class="container-fluid " >
-          <a class="navbar-brand " href="#">
+        <div className="container-fluid " >
+          <NavLink className="navbar-brand " to="#">
             OntoMed
-          </a>
+          </NavLink>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -28,37 +29,37 @@ const Navbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mr-3">
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0 mr-3">
               {" "}
-              {/* Add the mr-3 class here */}
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
+              {/* Add the mr-3 className here */}
+              <li className="nav-item">
+                <NavLink className="nav-link active" aria-current="page" to="/">
                   Home
-                </a>
+                </NavLink>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/about">
                   About
-                </a>
+                </NavLink>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/contact">
                   Contact
-                </a>
+                </NavLink>
               </li>
             </ul>
-            <form class="d-flex" role="search">
+            <form className="d-flex" role="search">
               <button
-                class="btn  me-2 btn-mg" // Adding btn-lg for larger size and btn-danger for red color
+                className="btn  me-2 btn-mg" // Adding btn-lg for larger size and btn-danger for red color
                 type="submit"
               >
                Register / SignUp
               </button>
               <button
-                class="btn-outline btn-mg " // Adding btn-lg for larger size and border-0 for no border
+                className="btn-outline btn-mg " // Adding btn-lg for larger size and border-0 for no border
                 type="submit"
                 
               >
